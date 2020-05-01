@@ -58,13 +58,25 @@ $('#photo-description').append('<p>'+imagesData[currentPhoto].text+'</p>');*/
 
 let loadPhoto = (photoNumber) => {
     $('#photo').attr('src', imagesData[photoNumber].photo);
-    $('#photo-title').append('<h1>'+imagesData[photoNumber].title+'</h1>');
+    $('#photo-description').append('<h1>'+imagesData[photoNumber].title+'</h1>');
     $('#photo-description').append('<p>'+imagesData[photoNumber].text+'</p>');
   }
   
   loadPhoto(currentPhoto);
   
   $('.right_arrow_frame').click(() => {
-    currentPhoto++;
+    $('h1').text(''); 
+    $('p').text(''); 
+    if (currentPhoto<5) {
+    currentPhoto++;}
+    loadPhoto(currentPhoto);
+  })
+
+
+  $('.left_arrow_frame').click(() => {
+    $('h1').text(''); 
+    $('p').text(''); 
+    if (currentPhoto>0){
+    currentPhoto--;}
     loadPhoto(currentPhoto);
   })
