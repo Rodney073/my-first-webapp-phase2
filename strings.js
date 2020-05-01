@@ -7,76 +7,76 @@ let data = {
     title: 'My title',
     description: 'What happened here, why is this a very nice image'
   };*/
-  
-  //$('#photo').attr('src', data.photo);
+
+//$('#photo').attr('src', data.photo);
 
 
-  let pic1 = {
-    photo:'https://static.boredpanda.com/blog/wp-content/uploads/2019/04/travelling-cuddling-stray-cats-istanbul-orin-fb12.png',
+let pic1 = {
+    photo: 'https://static.boredpanda.com/blog/wp-content/uploads/2019/04/travelling-cuddling-stray-cats-istanbul-orin-fb12.png',
     title: 'Cute1',
     text: 'Neque porro quisquam est1'
-   };
+};
 
-   let pic2 = {
-    photo:'https://m.blog.hu/ci/citydogs/image/kutya-macska_baratsag_10.jpg',
+let pic2 = {
+    photo: 'https://m.blog.hu/ci/citydogs/image/kutya-macska_baratsag_10.jpg',
     title: 'Cute2',
     text: 'Neque porro quisquam est2'
-   };
+};
 
-   let pic3 = {
-    photo:'https://hips.hearstapps.com/wdy.h-cdn.co/assets/15/41/1444244374-gettyimages-559292053.jpg',
+let pic3 = {
+    photo: 'https://hips.hearstapps.com/wdy.h-cdn.co/assets/15/41/1444244374-gettyimages-559292053.jpg',
     title: 'Cute3',
     text: 'Neque porro quisquam est3'
-   };
+};
 
-   let pic4 = {
-    photo:'https://i.ytimg.com/vi/4V7uTRwnaaw/maxresdefault.jpg',
+let pic4 = {
+    photo: 'https://i.ytimg.com/vi/4V7uTRwnaaw/maxresdefault.jpg',
     title: 'Cute4',
     text: 'Neque porro quisquam est4'
-   };
+};
 
-   let pic5 = {
-    photo:'https://i.imgur.com/GNNcXpQ.jpg',
+let pic5 = {
+    photo: 'https://i.imgur.com/GNNcXpQ.jpg',
     title: 'Cute5',
     text: 'Neque porro quisquam est5'
-   };
+};
 
-   let pic6 = {
-    photo:'https://www.petspyjamas.com/uploads/2013/07/can-cats-and-dogs-be-friends-1.jpg',
+let pic6 = {
+    photo: 'https://www.petspyjamas.com/uploads/2013/07/can-cats-and-dogs-be-friends-1.jpg',
     title: 'Cute6',
     text: 'Neque porro quisquam est6'
-   };
+};
 
 
 
 let currentPhoto = 0;
 let imagesData = [pic1, pic2, pic3, pic4, pic5, pic6];
-/*$('#photo').attr('src', imagesData[currentPhoto].photo);
-$('#photo-title').append('<h1>'+imagesData[currentPhoto].title+'</h1>');
-$('#photo-description').append('<p>'+imagesData[currentPhoto].text+'</p>');*/
 
 
 let loadPhoto = (photoNumber) => {
     $('#photo').attr('src', imagesData[photoNumber].photo);
-    $('#photo-description').append('<h1>'+imagesData[photoNumber].title+'</h1>');
-    $('#photo-description').append('<p>'+imagesData[photoNumber].text+'</p>');
-  }
-  
-  loadPhoto(currentPhoto);
-  
-  $('.right_arrow_frame').click(() => {
-    $('h1').text(''); 
-    $('p').text(''); 
-    if (currentPhoto<5) {
-    currentPhoto++;}
+    $('#photo-description').append('<h1>' + imagesData[photoNumber].title + '</h1>');
+    $('#photo-description').append('<p>' + imagesData[photoNumber].text + '</p>');
+}
+
+loadPhoto(currentPhoto);
+
+$('.right_arrow_frame').click(() => {
+    $('h1').text('');
+    $('p').text('');
+    if (currentPhoto < 5) {
+        currentPhoto++;
+    }
+    else { currentPhoto = 0 }
     loadPhoto(currentPhoto);
-  })
+})
 
 
-  $('.left_arrow_frame').click(() => {
-    $('h1').text(''); 
-    $('p').text(''); 
-    if (currentPhoto>0){
-    currentPhoto--;}
+$('.left_arrow_frame').click(() => {
+    $('h1').text('');
+    $('p').text('');
+    if (currentPhoto > 0) {
+        currentPhoto--;
+    } else { currentPhoto = 5 }
     loadPhoto(currentPhoto);
-  })
+})

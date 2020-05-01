@@ -77,7 +77,8 @@ body{
        
 }
 
-.picture1, .picture2, .picture3, .picture4, .picture5, .picture6 {
+/*.pic1.photo, .pic2.photo, .pic3.photo, .pic4.photo, .pic5.photo, .pic6.photo
+#photo {
     display:inline-block;
     width: 50px;
     height: 50px;
@@ -86,9 +87,7 @@ body{
     border: 4px solid white;
     border-radius: 4px;
     box-shadow: 0 4px 2px -2px gray;
-    
-
-}
+}*/
 
 .textbox {
     position: absolute;
@@ -100,21 +99,12 @@ body{
     font-size: medium;
     opacity: 0.6;
     
-    width: 970px;
+    width: 940px;
     height: 100px;
-    padding: 5px;
-}
-
-
-
-#photo-title {
+    padding: 20px;
+    padding-top: 0;
     margin: 0;
-    color:red;
-    font-size: medium;
-    opacity: 0.9;
+    
 }
 
-#photo-text {
-    margin: 0;
-    opacity: 1;
-}
+
