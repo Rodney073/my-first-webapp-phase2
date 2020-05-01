@@ -80,3 +80,11 @@ $('.left_arrow_frame').click(() => {
     } else { currentPhoto = 5 }
     loadPhoto(currentPhoto);
 })
+
+
+imagesData.forEach((numofpic) => {
+    $('.tinypics').append('<img id="thumbnails" src="' + numofpic.photo + '">');
+})
+
+
+
