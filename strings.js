@@ -2,42 +2,42 @@ let pic1 = {
     photo: 'https://static.boredpanda.com/blog/wp-content/uploads/2019/04/travelling-cuddling-stray-cats-istanbul-orin-fb12.png',
     title: 'Cute1',
     text: 'Neque porro quisquam est1',
-    id: 'no1'
+    id: 'no0'
 };
 
 let pic2 = {
     photo: 'https://m.blog.hu/ci/citydogs/image/kutya-macska_baratsag_10.jpg',
     title: 'Cute2',
     text: 'Neque porro quisquam est2',
-    id: 'no2'
+    id: 'no1'
 };
 
 let pic3 = {
     photo: 'https://hips.hearstapps.com/wdy.h-cdn.co/assets/15/41/1444244374-gettyimages-559292053.jpg',
     title: 'Cute3',
     text: 'Neque porro quisquam est3',
-    id: 'no3'
+    id: 'no2'
 };
 
 let pic4 = {
     photo: 'https://i.ytimg.com/vi/4V7uTRwnaaw/maxresdefault.jpg',
     title: 'Cute4',
     text: 'Neque porro quisquam est4',
-    id: 'no4'
+    id: 'no3'
 };
 
 let pic5 = {
     photo: 'https://i.imgur.com/GNNcXpQ.jpg',
     title: 'Cute5',
     text: 'Neque porro quisquam est5',
-    id: 'no5'
+    id: 'no4'
 };
 
 let pic6 = {
     photo: 'https://www.petspyjamas.com/uploads/2013/07/can-cats-and-dogs-be-friends-1.jpg',
     title: 'Cute6',
     text: 'Neque porro quisquam est6',
-    id: 'no6'
+    id: 'no5'
 };
 
 
@@ -80,39 +80,39 @@ imagesData.forEach((numofpic) => {
 })
 
 
-$('#no1').click(() => {
+$('#no0').click(() => {
     $('h1').text('');
     $('p').text('');
     loadPhoto(currentPhoto=0);
 })
 
 
-$('#no2').click(() => {
+$('#no1').click(() => {
     $('h1').text('');
     $('p').text('');
     loadPhoto(currentPhoto=1);
 })
 
-$('#no3').click(() => {
+$('#no2').click(() => {
     $('h1').text('');
     $('p').text('');
     loadPhoto(currentPhoto=2);
 })
 
 
-$('#no4').click(() => {
+$('#no3').click(() => {
     $('h1').text('');
     $('p').text('');
     loadPhoto(currentPhoto=3);
 })
 
-$('#no5').click(() => {
+$('#no4').click(() => {
     $('h1').text('');
     $('p').text('');
     loadPhoto(currentPhoto=4);
 })
 
-$('#no6').click(() => {
+$('#no5').click(() => {
     $('h1').text('');
     $('p').text('');
     loadPhoto(currentPhoto=5);
